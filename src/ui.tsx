@@ -64,7 +64,7 @@ export const Header = ({
     style={{
       fontWeight: "900",
       fontSize: 48,
-      color: theme.darkText,
+      color: theme.darkBlue,
       marginBottom: 12,
       ...style,
     }}
@@ -140,7 +140,7 @@ export const SelectorTextItem = ({
     onPress={onPress}
     style={{
       backgroundColor: selected ? theme.blue : "white",
-      borderColor: selected ? theme.darkBlue : theme.lightGray,
+      borderColor: selected ? theme.darkBlue : theme.veryLightBlue,
       borderBottomWidth: 2,
       paddingTop: 8,
       paddingBottom: 4,
@@ -187,7 +187,7 @@ export const SelectorTextItem = ({
           marginRight: 12,
           marginLeft: 12,
           marginBottom: 6,
-          backgroundColor: selected ? theme.darkBlue : theme.lightOffwhite,
+          backgroundColor: selected ? theme.black : theme.offwhite,
           paddingLeft: 12,
           paddingRight: 12,
           paddingBottom: 6,
@@ -199,7 +199,7 @@ export const SelectorTextItem = ({
           style={{
             fontWeight: "400",
             fontSize: 16,
-            color: selected ? "white" : theme.darkText,
+            color: selected ? "white" : theme.black,
           }}
         >
           {description}
@@ -340,7 +340,7 @@ export const GhostButtonWithGuts = ({
     style={{
       padding: 12,
       borderRadius: 10,
-      borderColor: borderColor || theme.lightGray,
+      borderColor: borderColor || theme.pink,
       borderWidth: 1,
       borderBottomWidth: 2,
       flex,
@@ -382,7 +382,7 @@ export const GhostButton = ({
       borderRadius: 10,
       justifyContent: "center",
       alignItems: "center",
-      borderColor: borderColor || theme.gray,
+      borderColor: borderColor || theme.red,
       borderWidth: 1,
       borderBottomWidth: 2,
       maxHeight: 48,
@@ -397,7 +397,7 @@ export const GhostButton = ({
     <Text
       style={{
         textAlign: "center",
-        color: textColor || theme.darkText,
+        color: textColor || theme.darkBlue,
         fontWeight: "700",
         fontSize: fontSize || 16,
       }}
@@ -486,7 +486,7 @@ export const IconButton = ({
 }) => (
   <TouchableOpacity
     style={{
-      backgroundColor: theme.lightGray,
+      backgroundColor: theme.offwhite,
       height: 48,
       width: 48,
       justifyContent: "center",
@@ -505,7 +505,7 @@ export const IconButton = ({
           height: 20,
           width: 20,
           borderRadius: 24,
-          backgroundColor: theme.pink,
+          backgroundColor: theme.veryLightBlue,
           position: "absolute",
           bottom: 34,
           left: 34,
@@ -529,7 +529,7 @@ IconButton.propTypes = {
 export const Paragraph = ({ children, style }: ParentComponent) => (
   <Text
     style={{
-      color: theme.lightText,
+      color: theme.offwhite,
       fontWeight: "400",
       fontSize: 16,
       ...style,
@@ -626,7 +626,7 @@ export const Badge = ({
 }) => (
   <View
     style={{
-      backgroundColor: backgroundColor || theme.lightBlue,
+      backgroundColor: backgroundColor || theme.black,
       paddingLeft: 12,
       paddingRight: 12,
       paddingBottom: 12,
@@ -641,14 +641,14 @@ export const Badge = ({
     <Text
       style={{
         fontWeight: "700",
-        color: theme.lightText,
+        color: theme.offwhite,
         fontSize: 14,
       }}
       maxFontSizeMultiplier={1.2}
     >
       {text}
     </Text>
-    <Feather name={featherIconName} size={16} color={theme.lightText} />
+    <Feather name={featherIconName} size={16} color={theme.offwhite} />
   </View>
 );
 
@@ -657,7 +657,7 @@ export const CapsLabel = ({ children, style }) => (
     style={{
       fontSize: 10,
       fontWeight: "700",
-      color: theme.lightText,
+      color: theme.offwhite,
       letterSpacing: 1,
       ...style,
     }}
